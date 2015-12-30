@@ -2,7 +2,7 @@
 
 [`Gtk.jl`](https://github.com/JuliaLang/Gtk.jl) を用いた、Julia 言語による簡単なタイマーアプリです。
 
-![スクリーンショット](ss.img)
+<img src="ss.png" width="400px" />
 
 `Gtk.jl` の他に`WAV.jl` が必要です。
 ただし、`Gtk.jl` と`Base.Timer` （タイマー本体）と`WAV.wavplay` は相性が悪いのか、現状では完全にはうまく使えません。（タイマーを一回鳴らすだけなら問題ありません）
