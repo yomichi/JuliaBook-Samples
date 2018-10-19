@@ -11,7 +11,7 @@ else
     io = open(filename, "w")
 end
 
-means, vars = randomwalk(num, nsteps, prob=prob)
+means, vars = randomwalk(num, nsteps, prob)
 
 for (i, (m, v)) in enumerate(zip(means, vars))
     println(io, "$(i-1) $m $v")
