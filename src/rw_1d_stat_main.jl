@@ -1,8 +1,8 @@
 include("rw_1d_stat.jl")
 
-num = length(ARGS)>0 ? parse(ARGS[1]) : 1000
-nsteps = length(ARGS)>1 ? parse(ARGS[2]) : 1000
-prob = length(ARGS)>2 ? parse(ARGS[3]) : 0.5
+num = length(ARGS)>0 ? parse(Int, ARGS[1]) : 1000
+nsteps = length(ARGS)>1 ? parse(Int, ARGS[2]) : 1000
+prob = length(ARGS)>2 ? parse(Float64, ARGS[3]) : 0.5
 filename = length(ARGS)>3 ? ARGS[4] : ""
 
 if isempty(filename)
