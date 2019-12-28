@@ -8,7 +8,7 @@ end
 
 point(x) = Point1D(x)
 zero(::Type{Point1D}) = Point1D(0.0)
-rand(r::AbstractRNG, ::Random.SamplerType{Point1D}) = Point1D(ifelse(rand(r)<0.5, 1., -1.))
+rand(r::AbstractRNG, ::Random.SamplerType{Point1D}) = Point1D(rand(r, [1.0, -1.0]))
 
 +(lhs :: Point1D, rhs :: Point1D) = Point1D(lhs.x + rhs.x)
 -(lhs :: Point1D, rhs :: Point1D) = Point1D(lhs.x - rhs.x)

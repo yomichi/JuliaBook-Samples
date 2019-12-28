@@ -11,7 +11,7 @@ export Point, update, plot_str
 abstract type Point end
 
 zero(x :: Point) = zero(typeof(x))
-rand(x :: Point) = rand(typeof(x))
+rand(rng :: AbstractRNG, x :: Point) = rand(r, typeof(x))
 
 function zeros(::Type{P}, dims::Union{Integer, AbstractUnitRange}...) where {P<:Point}
     ret = Array{P}(undef, dims...)
@@ -26,7 +26,7 @@ end
 
 abs(p :: Point) = sqrt(abs2(p))
 
-update(p :: Point) = p + rand(p)
+update(p :: Point) = p + rand(typeof(p))
 
 include("Point1d.jl")
 include("Point2d.jl")
