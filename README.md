@@ -2,4 +2,6 @@
 
 現在の最新は 2019-12-31 のコミックマーケット97
 
-本の正誤表は [wiki](https://github.com/yomichi/JuliaBook-Samples/wiki) へ
+本の正誤表は [wiki](https://github.com/yomichi/JuliaBook-Samples/wiki) や issue をご確認ください。
+
+誤植などありましたら issue に報告していただけると非常に助かります＆喜びます！
